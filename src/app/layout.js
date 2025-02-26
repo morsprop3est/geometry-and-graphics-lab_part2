@@ -1,4 +1,4 @@
-import "./globals.css";
+import "./globals.scss";
 
 export const metadata = {
   title: "Create Next App",
@@ -6,11 +6,14 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  return (
-    <html lang="en">
-      <body>
-        {children}
-      </body>
-    </html>
+  return (<html lang="uk">
+      <head>
+          <link
+              href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;600;700&display=swap"
+              rel="stylesheet"
+          />
+      </head>
+      <body>{children}</body>
+      </html>
   );
 }
